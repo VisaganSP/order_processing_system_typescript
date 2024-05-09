@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Visagan's Order Processing System</title>
+    <script src="dist/server.js"></script>
+    <script src="dist/index.js"></script>
+    <link rel="stylesheet" href="styles/order.css" />
+  </head>
+  <body>
+    <h1>Visagan's Order Processing System</h1>
+    <form action="">
+      Name: <input type="text" id="UserName" required /><br /><br />
+      Order No:<input type="text" id="OrderNo" required /><br /><br />
+      <div id="items">
+        Item: <input type="text" class="items" id="" required /> Cost:
+        <input type="number" class="cost" id="" min="0" required />
+      </div>
+      <br />
+      <input type="button" value="Add more" onclick="addMore()" /><br /><br />
+      Address: <br /><textarea
+        name="addr"
+        id="addr"
+        cols="30"
+        rows="10"
+        required
+      ></textarea
+      ><br />
+      <input
+        type="button"
+        value="Place Order"
+        onclick="placeOrder()"
+        required
+      /><br /><br />
+    </form>
+    <input type="button" value="Update Order" onclick="ToUpdate()" required />
+    <input type="button" value="Invoice" onclick="ToInvoice()" required />
+    <!-- <div id="display"></div> -->
+  </body>
+</html>

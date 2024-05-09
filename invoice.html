@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Invoice</title>
+    <script src="dist/index.js"></script>
+    <script src="dist/invoice.js"></script>
+    <link rel="stylesheet" href="styles/invoice.css" />
+  </head>
+  <body>
+    Order No:<input type="text" name="" id="OrderNo" />
+    <input type="button" value="Generate Invoice" onclick="invoice()" />
+    <div id="display" class="invoice-table"></div>
+    <input type="button" value="Update Order" onclick="ToUpdate()" />
+    <input type="button" value="Place Order" onclick="ToPlaceOrder()" />
+  </body>
+</html>
